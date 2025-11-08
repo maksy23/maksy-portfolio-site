@@ -1,55 +1,33 @@
-import { StoreProvider } from 'easy-peasy'
-import { useState } from 'react'
+import { Route, Routes } from 'react-router-dom'
 
-import viteLogo from '/vite.svg'
-
-import reactLogo from './assets/react.svg'
-import { ThemeProvider } from './providers/ThemeProvider/ThemeProvider'
-import store from './store/useStore'
+import HeaderFooterLayout from './components/layout/header-footer-layout'
+import About from './pages/about/index'
+import Contact from './pages/contact/index'
+import Home from './pages/home/index'
+import Projects from './pages/projects/index'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <ThemeProvider
-      defaultTheme='system'
-      storageKey='vite-ui-theme'
-    >
-      <StoreProvider store={store}>
-        <>
-          <div>
-            <a
-              href='https://vite.dev'
-              target='_blank'
-            >
-              <img
-                src={viteLogo}
-                className='logo'
-                alt='Vite logo'
-              />
-            </a>
-            <a
-              href='https://react.dev'
-              target='_blank'
-            >
-              <img
-                src={reactLogo}
-                className='logo react'
-                alt='React logo'
-              />
-            </a>
-          </div>
-          <h1 className='text-3xl font-bold underline'>Vite + React</h1>
-          <div className='card'>
-            <button onClick={() => setCount((count) => count + 1)}>count is {count}</button>
-            <p>
-              Edit <code>src/App.tsx</code> and save to test HMR
-            </p>
-          </div>
-          <p className='read-the-docs'>Click on the Vite and React logos to learn more</p>
-        </>
-      </StoreProvider>
-    </ThemeProvider>
+    <Routes>
+      <Route element={<HeaderFooterLayout />}>
+        <Route
+          path='/'
+          element={<Home />}
+        />
+        <Route
+          path='/about'
+          element={<About />}
+        />
+        <Route
+          path='/projects'
+          element={<Projects />}
+        />
+        <Route
+          path='/contact'
+          element={<Contact />}
+        />
+      </Route>
+    </Routes>
   )
 }
 

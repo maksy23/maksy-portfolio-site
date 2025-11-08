@@ -1,5 +1,5 @@
 {
-  "name": "daily-pulse",
+  "name": "maksy-site",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -23,15 +23,13 @@
     ]
   },
   "dependencies": {
-    "@radix-ui/react-dropdown-menu": "^2.1.16",
     "@radix-ui/react-slot": "^1.2.3",
-    "axios": "^1.12.2",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
-    "easy-peasy": "^6.1.0",
     "lucide-react": "^0.544.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
+    "react-router-dom": "^7.9.5",
     "tailwind-merge": "^3.3.1"
   },
   "devDependencies": {
