@@ -1,5 +1,6 @@
 import { Moon, Sun } from 'lucide-react'
 
+import { cn } from '@/lib/utils'
 import { useTheme } from '@/providers/theme-provider/useThemeHook'
 
 import { Button } from '../ui/button'
@@ -20,7 +21,7 @@ export function ThemeModeToggle({ className }: ThemeModeToggleProps) {
       variant='ghost'
       size='icon'
       onClick={toggleTheme}
-      className={className}
+      className={cn('hover:!bg-transparent', className)}
     >
       {theme === 'light' ? (
         <Sun className='h-[1.2rem] w-[1.2rem] scale-100 rotate-0 transition-all dark:scale-0 dark:-rotate-90' />
