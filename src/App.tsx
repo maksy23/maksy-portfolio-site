@@ -1,14 +1,33 @@
+import { Route, Routes } from 'react-router-dom'
+
+import HeaderFooterLayout from './components/layout/header-footer-layout'
+import About from './pages/about/index'
+import Contact from './pages/contact/index'
 import Home from './pages/home/index'
-import { ThemeProvider } from './providers/ThemeProvider/ThemeProvider'
+import Projects from './pages/projects/index'
 
 function App() {
   return (
-    <ThemeProvider
-      defaultTheme='system'
-      storageKey='vite-ui-theme'
-    >
-      <Home />
-    </ThemeProvider>
+    <Routes>
+      <Route element={<HeaderFooterLayout />}>
+        <Route
+          path='/'
+          element={<Home />}
+        />
+        <Route
+          path='/about'
+          element={<About />}
+        />
+        <Route
+          path='/projects'
+          element={<Projects />}
+        />
+        <Route
+          path='/contact'
+          element={<Contact />}
+        />
+      </Route>
+    </Routes>
   )
 }
 
