@@ -5,6 +5,7 @@ import About from './pages/about/index'
 import Contact from './pages/contact/index'
 import Home from './pages/home/index'
 import Projects from './pages/projects/index'
+import Styles from './pages/styles/index'
 import { ThemeProvider } from './providers/theme-provider'
 
 function App() {
@@ -26,6 +27,10 @@ function App() {
           <Route
             path='/projects'
             element={<Projects />}
+          />
+          <Route
+            path='/styles'
+            element={<Styles />}
           />
           <Route
             path='/contact'
