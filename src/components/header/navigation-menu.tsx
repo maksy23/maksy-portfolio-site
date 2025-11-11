@@ -34,22 +34,6 @@ export default function NavigationMenu({ className }: NavigationMenuProps) {
         </li>
         <li>
           <NavLink
-            to='/about'
-            className={linkClass}
-          >
-            About
-          </NavLink>
-        </li>
-        <li>
-          <NavLink
-            to='/styles'
-            className={linkClass}
-          >
-            Styles
-          </NavLink>
-        </li>
-        <li>
-          <NavLink
             to='/contact'
             className={linkClass}
           >
