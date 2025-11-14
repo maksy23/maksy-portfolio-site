@@ -22,24 +22,24 @@ export default function Home() {
           <div className='flex items-center gap-4'>
             <a
               href={gitHubUrl}
-              className='text-muted-foreground hover:text-foreground transition-colors'
+              className='text-primary hover:text-foreground transition-colors'
               target='_blank'
               rel='noopener noreferrer'
             >
               <GitHub
                 className='h-6 w-6'
-                fillColor='#7c3aed'
+                fillColor='currentColor'
               />
             </a>
             <a
               href={linkedInUrl}
-              className='text-muted-foreground hover:text-foreground transition-colors'
+              className='text-primary hover:text-foreground transition-colors'
               target='_blank'
               rel='noopener noreferrer'
             >
               <LinkedIn
                 className='h-6 w-6'
-                fillColor='#7c3aed'
+                fillColor='currentColor'
               />
             </a>
           </div>

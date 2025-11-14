@@ -19,24 +19,24 @@ export default function Footer({ className }: FooterProps) {
         <div className='flex items-center gap-2 py-2'>
           <a
             href={gitHubUrl}
-            className='text-muted-foreground hover:text-foreground transition-colors'
+            className='hover:text-muted-foreground text-white transition-colors'
             target='_blank'
             rel='noopener noreferrer'
           >
             <GitHub
               className='h-6 w-6'
-              fillColor='#e5e5e5'
+              fillColor='currentColor'
             />
           </a>
           <a
             href={linkedInUrl}
-            className='text-muted-foreground hover:text-foreground transition-colors'
+            className='hover:text-muted-foreground text-white transition-colors'
             target='_blank'
             rel='noopener noreferrer'
           >
             <LinkedIn
               className='h-6 w-6'
-              fillColor='#e5e5e5'
+              fillColor='currentColor'
             />
           </a>
         </div>
