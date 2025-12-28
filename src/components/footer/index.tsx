@@ -42,7 +42,7 @@ export default function Footer({ className }: FooterProps) {
         </div>
       </div>
       <div className='py-2 text-xs font-medium text-white md:self-end md:text-sm lg:text-base'>
-        © 2025 Maksym Yakovenko. All rights reserved.
+        {`© ${new Date().getFullYear()} Maksym Yakovenko. All rights reserved.`}
       </div>
     </footer>
   )
